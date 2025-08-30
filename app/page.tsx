@@ -52,8 +52,8 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 relative">
-      <div className="flex items-center justify-center min-h-screen p-4">
+    <div className="flex flex-col min-h-screen bg-gray-900">
+      <main className="flex-grow flex items-center justify-center p-4">
         <div className="w-full max-w-6xl">
           {/* Header */}
           <div className="text-center mb-4">
@@ -198,31 +198,33 @@ export default function Home() {
               )}
             </div>
           )}
-
-          {/* Footer */}
-          <div className="text-center mt-4 text-gray-400">
-            <p className="text-xs">
-              Powered by EdgeOne • Real-time geolocation detection
-            </p>
-            <p className="text-xs mt-1">
-              <a
-                href="https://github.com/TencentEdgeOne/pages-templates/tree/main/examples/functions-geolocation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors duration-200 underline"
-              >
-                View Source Code
-              </a>
-            </p>
-            <p className="text-xs mt-1">sansan</p>
-            <p className="text-xs mt-1">
-              <a href="https://zhou.su" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-200 underline">zhou.su</a>
-              {' • '}
-              <a href="https://status.zhou.su" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-200 underline">status.zhou.su</a>
-            </p>
-          </div>
         </div>
-      </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="w-full py-4 px-4 text-center text-gray-400 text-xs">
+        <p>
+          Powered by EdgeOne • Real-time geolocation detection
+        </p>
+        <p className="mt-1">
+          <a
+            href="https://github.com/TencentEdgeOne/pages-templates/tree/main/examples/functions-geolocation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 transition-colors duration-200 underline"
+          >
+            View Source Code
+          </a>
+        </p>
+        <div className="mt-4">
+            <p>Deployed by sansan</p>
+            <p className="mt-1">
+                <a href="https://zhou.su" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-200 underline px-2">zhou.su</a>
+                <span className="text-gray-500">|</span>
+                <a href="https://status.zhou.su" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-200 underline px-2">status.zhou.su</a>
+            </p>
+        </div>
+      </footer>
     </div>
   );
 }
