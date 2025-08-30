@@ -214,6 +214,12 @@ export default function Home() {
                 View Source Code
               </a>
             </p>
+            <p className="text-xs mt-1">sansan</p>
+            <p className="text-xs mt-1">
+              <a href="https://zhou.su" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-200 underline">zhou.su</a>
+              {' • '}
+              <a href="https://status.zhou.su" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-200 underline">status.zhou.su</a>
+            </p>
           </div>
         </div>
       </div>
